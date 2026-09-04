@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora - Fashion Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleMobil.css">
+    <link rel="stylesheet" href="css/styleTablet.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#">VELORA</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Відкрити меню">
+                <span class="menu_line"></span>
+                <span class="menu_line"></span>
+                <span class="menu_line"></span>
+            </button>
+
+            <nav class="nav">
+                <a href="#" class="menu_btn">Каталог</a>
+                <a href="#" class="menu_btn">Відгуки</a>
+                <a href="#" class="menu_btn">Новинка</a>
+                <a href="#" class="menu_btn">Про нас</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="hero">
+    <div class="hero-container">
+        <h1 class="big-title">VELORA</h1>
+        <p class="texts">Створюйте свій неповторний стиль разом із Velora. Якісний одяг для сучасного життя.</p>
+        <div class="hero-img-wrapper">
+            <img src="photo/1.png" alt="Fashion" class="hero-img">
+            <a href="#" class="btn-buy">Оформити замовлення</a>
+        </div>
+    </div>
+</main>
+
+<section class="main-container">
+    <h2>Нові надходження</h2>
+
+    <p class="description">
+        Відкрийте для себе найновіші стилі, щойно зібрані. Від повсякденних речей першої необхідності до ефектних речей - нові тренди, щотижневе оновлення.
+    </p>
+
+    <div class="buttons">
+        <button>Все</button>
+        <button class="active">Чоловіча мода</button>
+        <button>Жіноча мода</button>
+    </div>
+
+    <div class="slider-wrapper">
+        <button class="slider-arrow prev-arrow" aria-label="Назад">&#8592;</button>
+        <button class="slider-arrow next-arrow" aria-label="Вперед">&#8594;</button>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="photo/1.1.png" alt="Ляна сорочка">
+                <span class="title">Ляна сорочка</span>
+                <span class="price">$26.00</span>
+            </div>
+
+            <div class="product-card">
+                <img src="photo/1.2.png" alt="Карго жилетка">
+                <span class="title">Карго жилетка</span>
+                <span class="price">$24.00</span>
+            </div>
+
+            <div class="product-card">
+                <img src="photo/1.3.png" alt="Графічна футболка">
+                <span class="title">Графічна футболка</span>
+                <span class="price">$18.00</span>
+            </div>
+
+            <div class="product-card">
+                <img src="photo/1.4.png" alt="Безрукавка з капюшоном">
+                <span class="title">Безрукавка з капюшоном</span>
+                <span class="price">$20.00</span>
+            </div>
+
+            <div class="product-card">
+                <img src="photo/1.5.png" alt="Спортивний трикотаж">
+                <span class="title">Спортивний трикотаж</span>
+                <span class="price">$22.00</span>
+            </div>
+
+            <div class="product-card">
+                <img src="photo/1.6.png" alt="Базова куртка">
+                <span class="title">Базова куртка</span>
+                <span class="price">$28.00</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews-section">
+    <h2>Що кажуть наші клієнти</h2>
+    <p class="reviews-subtitle">
+        Дізнайтеся, що наші клієнти говорять про нас: від стильного дизайну до неперевершеного комфорту та якості. Їхні слова відображають любов до наших колекцій.
+    </p>
+
+    <div class="slider-container">
+        <div class="slider" id="reviewSlider">
+            
+            <div class="card left">
+                <div class="testimonial">
+                    <div class="quote">„</div>
+                    <p class="quote-text">Виняткова якість матеріалів і бездоганний крій. Речі виглядають дорого і носяться дуже довго. Це найкраще, що я купував за останній час.</p>
+                    <div class="author">
+                        <img src="photo/девка (3).png" alt="Ethan Cole">
+                        <div>
+                            <strong>Ethan Cole</strong>
+                            <span>Designs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card center">
+                <div class="testimonial">
+                    <div class="quote">„</div>
+                    <p class="quote-text">Майстерність виготовлення чоловічих речей не має собі рівних. Настійно рекомендую цей бренд усім, хто цінує вишуканість та довговічність.</p>
+                    <div class="author">
+                        <img src="photo/пацан.png" alt="Rhodes Jhon">
+                        <div>
+                            <strong>Rhodes Jhon</strong>
+                            <span>Manager and CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card right">
+                <div class="testimonial">
+                    <div class="quote">„</div>
+                    <p class="quote-text">Дуже задоволена! Речі сидять ідеально, тканина приємна до тіла, не втрачає вигляд після прання. Купувала чоловіку — тепер планую собі замовити.</p>
+                    <div class="author">
+                        <img src="photo/девка (1).png" alt="Yulia">
+                        <div>
+                            <strong>Yulia Petrova</strong>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider-arrows">
+            <button class="arrow-btn prev">←</button>
+            <button class="arrow-btn next">→</button>
+        </div>
+    </div>
+</section>
+
+<section class="leaders-section">
+    <h2>Лідери продажів</h2>
+    <p class="leaders-subtitle">Ознайомтеся з колекцією бестселерів, улюбленими товарами клієнтів, які поєднують стиль, комфорт та останні тенденції.</p>
+
+    <div class="leaders-container">
+        <div class="product-card">
+            <img src="photo/2.1.png" alt="Штани чинос">
+            <div class="product-info">Штани чинос</div>
+            <div class="product-price">$30.00</div>
+        </div>
+
+        <div class="product-card">
+            <img src="photo/2.2.png" alt="Худі">
+            <div class="product-info">Худі з половинним рукавом</div>
+            <div class="product-price">$25.00</div>
+        </div>
+
+        <div class="product-card">
+            <img src="photo/2.3.png" alt="Піжамні штани">
+            <div class="product-info">Піжамні штани з принтом</div>
+            <div class="product-price">$18.00</div>
+        </div>
+
+        <div class="product-card">
+            <img src="photo/2.4.png" alt="Плавки">
+            <div class="product-info">Плавки</div>
+            <div class="product-price">$22.00</div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-container">
+    <p class="banner-p">Зимова колекція вже скоро в продажу.</p>
+    <div class="banner-timer">
+        <div class="banner-div">
+            <span class="banner-span">23</span>
+            <span class="banner-text">Годин</span>
+        </div>
+        <div class="banner-div">
+            <span class="banner-span">46</span>
+            <span class="banner-text">Хвилин</span>
+        </div>
+        <div class="banner-div">
+            <span class="banner-span">48</span>
+            <span class="banner-text">Секунд</span>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-column brand-col">
+            <h3 class="footer-logo">Velora</h3>
+            <address class="footer-address">
+                456 Вест Орчард Стріт,<br>
+                Кінгс Маунтін, Північна<br>
+                Кароліна, 28066
+            </address>
+            <div class="social-links">
+                <img src="photo/фейсбук.png" alt="Facebook">
+                <img src="photo/x.png" alt="X">
+                <img src="photo/інста.png" alt="Instagram">
+                <img src="photo/пінтерест.png" alt="Pinterest">
+                <img src="photo/linkedin-square-icon 1.png" alt="LinkedIn">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h4>Довідка</h4>
+            <ul class="footer-links">
+                <li>Політика конфіденційності</li>
+                <li>Умови доставки</li>
+                <li>Інформація про мій обліковий запис</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Про нас</h4>
+            <ul class="footer-links">
+                <li>Наша історія</li>
+                <li>Відвідайте наш магазин</li>
+                <li>Зв'яжіться з нами</li>
+                <li>Про нас</li>
+            </ul>
+        </div>
+
+        <div class="subscribe-col">
+            <h4>Підпишіться на електронну пошту</h4>
+            <p class="subscribe-desc">
+                Зареєструйтесь, щоб першими отримувати інформацію про нові надходження, розпродажі, ексклюзивний контент, події тощо.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p class="copyright">© Авторське право захищено Velora</p>
+            <div class="payment-methods">
+                <img src="photo/paypal-icon 1.png" alt="PayPal">
+                <img src="photo/visa-icon 1.png" alt="Visa">
+                <img src="photo/master-card-icon 1.png" alt="Mastercard">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav');
+
+    if (burger && navMenu) {
+        burger.addEventListener('click', function() {
+            navMenu.classList.toggle('open_nav');
+        });
+    }
+});
+</script>
+
+</body>
+</html>

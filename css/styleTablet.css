@@ -1,0 +1,518 @@
+@media (max-width: 780px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh; 
+        background-color: #3b75a4;
+        overflow: hidden;
+    }
+
+    .hero-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* ВИПАДАЮЧЕ МЕНЮ */
+    @media (max-width: 780px) {
+
+    .header-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        z-index: 150;
+    }
+
+    .logo a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 18px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 160;
+    }
+
+    .menu_line {
+        display: block;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+
+    .menu_line:nth-child(1) { width: 100%; }
+    .menu_line:nth-child(2) { width: 70%; }
+    .menu_line:nth-child(3) { width: 100%; }
+
+    /* Горизонтальне меню */
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #b8b8b8;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        z-index: 140;
+    }
+
+    .nav.open_nav {
+        max-height: 60px;
+        padding: 15px 0;
+    }
+
+    .menu_btn {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+}
+
+    /* ВЕЛИКИЙ ТЕКСТ VELORA */
+    .big-title {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20vw;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 10; 
+        pointer-events: none; 
+        line-height: 1;
+    }
+
+    /* ФОТОГРАФІЯ ТА КНОПКА */
+    .hero-img-wrapper {
+        position: absolute;
+        bottom: 0; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 20;
+    }
+
+    .hero-img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* Біла кнопка "ОФОРМИТИ ЗАМОВЛЕННЯ" */
+    .btn-buy {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 30;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 12px 35px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .texts {
+        display: none;
+    }
+
+    /* ==========================================================================
+       2 СТОРІНКА (НОВІ НАДХОДЖЕННЯ) — ВИРІВНЮВАННЯ КАРТОК
+       ========================================================================== */
+    center {
+        padding: 60px 20px;
+    }
+
+    center h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    center p {
+        max-width: 520px;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .buttons button {
+        background: #ffffff;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 12px 20px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        border-radius: 0; 
+        padding-right: 60px;
+        color: #000000;
+    }
+
+    .buttons .active {
+        background: #000;
+        color: #fff;
+        padding: 15px 20px; 
+        min-width: 180px;   
+        border-radius: 0; 
+    }
+
+    table {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    tr {
+        display: flex;
+        flex-wrap: wrap;      
+        justify-content: center; 
+        gap: 35px 25px;          
+    }
+
+    td {
+        width: 220px;            
+        font-size: 14px;
+        text-align: left;
+        color: #000;
+        position: relative; 
+        padding: 0;
+    }
+
+    td img {
+        width: 220px;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    td .title {
+        font-size: 15px;
+        font-weight: normal;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    td .price {
+        font-weight: bold;
+        display: block;
+    }
+    /* ==========================================================================
+       3 СТОРІНКА (СЛАЙДЕР ВІДГУКІВ) — ОСТАТОЧНЕ ВИРІВНЮВАННЯ ВСЕРЕДИНУ КАРТКИ
+       ========================================================================== */
+   /* ==========================================================================
+   АДАПТИВ ДЛЯ ЕКРАНІВ 780px І МЕНШЕ (МОБІЛЬНИЙ СЛАЙДЕР ВІДГУКІВ)
+   ========================================================================== */
+@media (max-width: 780px) {
+    
+    /* Контейнер для всього блоку (картка + кнопки) */
+    .reviews-section .slider-container {
+        position: relative;
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    /* Зменшуємо висоту треку, щоб стрілочки сіли впритул під картку */
+    .reviews-section .slider {
+        position: relative;
+        width: 100%;              
+        height: 270px;            
+        overflow: visible;        
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+
+    .reviews-section .card {
+        position: absolute;
+        background: #ffffff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+        border-radius: 8px;       
+        box-sizing: border-box;
+        padding: 25px 25px 20px 25px; 
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 30px);
+    }
+
+    /* Ховаємо стару кому-лапку з HTML */
+    .reviews-section .card .quote {
+        display: none; 
+    }
+
+    /* Нова красива лапка в лівому кутку */
+    .reviews-section .card::before {
+        content: "“";
+        font-size: 60px;          
+        color: #111111;
+        line-height: 0.5;
+        margin-bottom: 10px;
+        font-family: Georgia, serif;
+        display: block;
+        text-align: left;
+    }
+
+    /* Текст відгуку */
+    .reviews-section .card p.quote-text {
+        font-size: 15px;    
+        line-height: 1.5;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px; 
+        color: #000000;
+        word-break: normal;
+    }
+
+    /* Блок автора всередині картки */
+    .reviews-section .card .author {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;          
+        width: 100%;
+        margin-top: auto;   
+    }
+
+    /* Компактна аватарка */
+    .reviews-section .card .author img { 
+        width: 48px;        
+        height: 48px;  
+        border-radius: 50%; 
+        object-fit: cover;
+        display: block;
+        flex-shrink: 0; 
+        margin: 0;
+    }
+
+    .reviews-section .card .author div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .reviews-section .card .author strong {
+        font-size: 15px;    
+        color: #000000;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+
+    .reviews-section .card .author span {
+        font-size: 13px;    
+        color: #666666;
+        line-height: 1.2;
+    }
+
+    /* Позиціонування активної картки */
+    .reviews-section .card.center {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%); 
+        z-index: 3;
+        opacity: 1;
+        display: flex;
+    }
+
+    /* Ховаємо сусідні слайди */
+    .reviews-section .card.left,
+    .reviews-section .card.right {
+        display: none;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    /* СТРІЛОЧКИ КЕРУВАННЯ — ТЕПЕР ТОЧНО НАД СВОЇМ МІСЦЕМ */
+    .reviews-section .slider-arrows {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;        /* Акуратний невеликий відступ від картки */
+        position: relative;
+        z-index: 10;             
+        width: 100%;
+    }
+
+    .reviews-section .slider-arrows .arrow-btn {
+        width: 50px;             
+        height: 50px;
+        border-radius: 50%;
+        background-color: #111111;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;    
+        transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .reviews-section .slider-arrows .arrow-btn:active {
+        transform: scale(0.92);
+    }
+}
+
+    /* ==========================================================================
+       4 СТОРІНКА (ЛІДЕРИ ПРОДАЖІВ) — СІТКА 2 КОЛОНКИ ПО 2 ФОТОГРАФІЇ
+       ========================================================================== */
+    .leaders-section .leaders-container {
+        display: grid !important;
+        /* Створюємо рівно 2 колонки */
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* Акуратні відступи між фотографіями */
+        gap: 30px 15px !important;
+        padding: 0 15px !important;
+        box-sizing: border-box;
+    }
+
+    .leaders-section .product-card {
+        width: 100% !important; /* Картка займає всю ширину своєї колонки */
+        text-align: left;
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leaders-section .product-card img {
+        width: 100% !important; /* Фото підлаштовується під колонку */
+        height: auto !important;
+        /* Робимо пропорцію висоти як у нових надходженнях (співвідношення приблизно 1:1.15) */
+        aspect-ratio: 220 / 250 !important; 
+        border-radius: 0 !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+
+    .leaders-section .product-card .product-info {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 4px;
+        display: block;
+        line-height: 1.3;
+    }
+
+    .leaders-section .product-card .product-price {
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+        display: block;
+    }
+
+    /* ==========================================================================
+       БАНЕР ЗИМОВОЇ КОЛЕКЦІЇ ПЕРЕД ФУТЕРОМ — ЗБІЛЬШЕННЯ ТА ТОНКИЙ ШРИФТ
+       ========================================================================== */
+  .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 500px; 
+        width: 100%;      
+        margin: 0 auto;  
+
+        min-height: 350px; 
+        padding: 60px 20px; 
+        box-sizing: border-box;
+        background-color: #051422; 
+    }
+
+    /* Прибираємо товщину шрифту тексту */
+    .banner-container .banner-p {
+        font-size: 24px; 
+        font-weight: normal !important; 
+        color: #ffffff;
+        margin-bottom: 30px;
+        line-height: 1.4;
+    }
+
+    /* Блок таймера */
+    .banner-timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px; 
+    }
+
+    .banner-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Цифри таймера */
+    .banner-container .banner-span {
+        font-size: 36px;
+        font-weight: normal !important; 
+        color: #ffffff;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    /* Підписи під цифрами */
+    .banner-container .banner-text {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

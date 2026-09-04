@@ -1,0 +1,539 @@
+@media (max-width: 360px) {
+    
+    .hero {
+        height: 80vh;                 /* Дозволяємо контенту самому формувати висоту без обрізань */
+        min-height: 70vh;
+        position: relative;
+        background: #3b75a4; 
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;       /* Вишиковуємо все чітко зверху до низу */
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .header-top {
+        padding: 15px 20px;
+        position: relative;
+        z-index: 150;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;           
+        right: 20px;         
+        left: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;  
+        gap: 15px;            
+        background: rgba(160, 160, 160, 0.9); 
+        padding: 20px;
+        border: 1px solid #555555;
+        width: 140px;         
+        box-sizing: border-box;
+        z-index: 140;
+        max-height: 0; 
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav.open_nav {
+        max-height: 250px;
+        opacity: 1;
+        padding: 20px;
+    }
+
+    .nav a, .menu_btn {
+        color: #ffffff;
+        font-size: 14px;
+        font-family: serif;
+        text-transform: none;  
+        width: 100%;
+        text-align: right;
+    }
+
+    /* ВЕЛИКИЙ ТЕКСТ "VELORA" — ТЕПЕР ЧІТКО ЗВЕРХУ І НЕ ПЕРЕКРИВАЄ ЛЮДЕЙ */
+    .big-title {
+        font-size: 64px;             /* Оптимальний розмір для екрана 360px */
+        position: relative;          /* Прибираємо absolute, щоб текст не наповзав на фото */
+        top: 0;
+        left: 0;
+        transform: none;
+        z-index: 10;        
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+        margin: 20px 0 10px 0;
+        line-height: 1.1;
+        color: #ffffff;
+    }
+
+    /* ПІДЗАГОЛОВОК — ПІД НАПИСОМ VELORA */
+    .texts {
+        font-size: 14px;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto 20px auto;    /* Прибираємо гігантські марджини */
+        color: #ffffff;
+        display: block;
+        line-height: 1.4;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* КОНТЕЙНЕР ДЛЯ ФОТО ТА КНОПКИ */
+    .hero-img-wrapper {
+        position: relative;
+        width: 80%;        
+        display: flex;
+        flex-direction: column;      /* Кнопка ляже під фотографією або на неї */
+        align-items: center;
+        justify-content: center;
+        z-index: 5;         
+        margin-top: auto;            /* Штовхає фото до нижнього краю екрана */
+    }
+
+    /* КАРТИНКА МОДЕЛЕЙ */
+    .hero-img {     
+        width: 170%;
+        height: auto;
+        max-height: 60vh;            /* Обмежуємо висоту фото, щоб залишити місце для кнопки */
+        object-fit: cover;
+        display: block;
+        margin-bottom: 0;   
+        padding-top: 180px;
+        padding-right: 20px;
+    }
+
+    /* КНОПКА "ОФОРМИТИ ЗАМОВЛЕННЯ" — ПО СЕРЕДИНІ ТА КРАСИВА */
+    .btn-buy {
+        bottom: 20px;                /* Піднімаємо трохи вище від краю */
+        left: 50%;
+        transform: translateX(-50%); /* Ідеальне центрування по горизонталі */
+        height: auto;                                 
+        max-width: 160px;       
+        font-size: 11px;          
+        font-weight: bold;
+        text-align: center;
+        background-color: #ffffff;   /* Біле тло */
+        color: #000000;              /* Чорний текст */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s;
+    }
+    
+    .btn-buy:active {
+        background-color: #e5e5e5;
+    }
+      .texts {
+        display: block;
+    }
+
+    .hero-img-wrapper {
+        display: flex;
+    }
+}
+.header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    z-index: 150;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        z-index: 150; 
+    }
+
+    .logo a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+.header-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        z-index: 150; 
+    }
+
+    .logo a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 32px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 160;
+    }
+
+    /* Білі смужки різної довжини */
+    .menu_line {
+        display: block;
+        height: 5px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    .menu_line:nth-child(1) { width: 100%; }
+    .menu_line:nth-child(2) { width: 80%; }
+    .menu_line:nth-child(3) { width: 60%; }
+
+    .nav {
+        display: flex;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background: rgba(188, 188, 188, 0.95); 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        
+        /* Анімація закриття/відкриття */
+        max-height: 0px; 
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        z-index: 140;
+        box-sizing: border-box;
+    }
+
+    .nav.open_nav {
+        max-height: 60px; 
+        padding: 15px 0;
+    }
+
+    .menu_btn {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+@media (max-width: 360px) {
+    /* ==========================================================================
+       ДРУГА СТОРІНКА — ПОВНА ВЕРСТКА СЛАЙДЕРА "НОВІ НАДХОДЖЕННЯ" (360px)
+       ========================================================================== */
+
+    .main-container {
+        padding: 40px 0;
+        background-color: #ffffff;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-container h2 {
+        font-size: 26px;
+        font-family: serif;
+        font-weight: normal;
+        text-align: center;
+        color: #000000;
+        margin: 0 0 15px 0;
+    }
+
+    .main-container .description {
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+        color: #000000;
+        width: 88%;
+        max-width: 320px;
+        margin: 0 auto 30px auto;
+    }
+
+    /* КНОПКИ НАВІГАЦІЇ / ФІЛЬТРИ */
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .buttons button {
+        background: none;
+        border: none;
+        color: #000000;
+        font-size: 18px;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+
+    .buttons button.active {
+        background-color: #000000;
+        color: #ffffff;
+      width: 20px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+
+    /* КОНТЕЙНЕР ДЛЯ ЦЕНТРУВАННЯ ТА СТРІЛОК */
+    .products-slider-container {
+        position: relative;          /* Робить цей блок головним орієнтиром для стрілок */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;     /* Зсуває трек з фотографією чітко по центру */
+        padding: 0 50px;             /* Створює зазори з боків під круглі стрілочки */
+        box-sizing: border-box;
+    }
+
+    /* ВІКНО СЛАЙДЕРА */
+    .products-grid {
+        display: flex;
+        width: 100%;
+        max-width: 235px;            /* Обмежує ширину картки під пропорції екрана 360px */
+        gap: 0;                      
+        overflow-x: auto;            /* Дозволяє свайпати картки пальцем */
+        scroll-snap-type: x mandatory; 
+        scrollbar-width: none;       /* Прибирає бігунок прокрутки */
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .products-grid::-webkit-scrollbar {
+        display: none;               /* Ховаємо скроллбар для мобільних браузерів Safari/Chrome */
+    }
+
+    /* КАРТКА ТОВАРУ */
+    .product-card {
+        flex: 0 0 100%;              /* Один товар займає 100% простору вікна */
+        width: 100%;
+        scroll-snap-align: center;   /* Фіксує товар рівно по центру під час свайпу */
+        text-align: left;            /* Текстові блоки зміщуються ліворуч під фото */
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 275px;               /* Висота фотографії з макета */
+        object-fit: cover;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+    .product-card .title {
+        font-size: 15px;
+        color: #000000;
+        margin-bottom: 4px;
+        font-family: sans-serif;
+    }
+    
+    .product-card .price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        font-family: sans-serif;
+    }
+
+    /* ЧОРНІ КРУГЛІ СТРІЛОЧКИ (СПІЛЬНІ СТИЛІ) */
+    .product-arrow {
+        position: absolute;
+        top: 118px;                  /* Встановлює стрілки чітко по центру висоти зображення */
+        width: 40px;                 /* Кругла ергономічна форма під палець */
+        height: 40px;
+        background-color: #111111;   
+        color: #ffffff;              
+        border-radius: 50%;          
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        transition: background-color 0.2s;
+        padding: 0;
+    }
+
+    .product-arrow:active {
+        background-color: #444444;   
+    }
+
+    /* Ліва стрілка стає з лівого боку */
+    .product-arrow.left-arrow {
+        left: 5px;
+    }
+
+    /* Права стрілка стає з правого боку */
+    .product-arrow.right-arrow {
+        right: 5px;
+    }
+}
+@media (max-width: 360px) {
+    /* ==========================================================================
+       ЧЕТВЕРТА СТОРІНКА — СЛАЙДЕР "ЛІДЕРИ ПРОДАЖІВ" (360px)
+       ========================================================================== */
+
+    .sales-container {
+        padding: 35px 0 40px 0;
+        background-color: #ffffff;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sales-container h2 {
+        font-size: 22px;
+        font-family: serif;
+        font-weight: normal;
+        text-align: center;
+        color: #000000;
+        margin: 0 0 10px 0;
+    }
+
+    .sales-container .description {
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+        color: #333333;
+        width: 90%;
+        max-width: 310px;
+        margin: 0 auto 20px auto;
+    }
+
+    /* КОНТЕЙНЕР ДЛЯ ЦЕНТРУВАННЯ ТА СТРІЛОК */
+    .sales-slider-container {
+        position: relative;          /* Прив'язуємо стрілки до фото */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;     /* Центруємо картку по горизонталі */
+        padding: 0 45px;             /* Вільне місце для бокових стрілок */
+        box-sizing: border-box;
+    }
+
+    /* ВІКНО СЛАЙДЕРА (КОМПАКТНЕ З ВІДСТУПОМ ЗВЕРХУ) */
+    .sales-grid {
+        display: flex;
+        width: 100%;
+        max-width: 190px;            /* Точно такий же компактний розмір фото */
+        gap: 0;                      
+        overflow-x: auto;            /* Дозволяємо свайпати пальцем */
+        scroll-snap-type: x mandatory; /* Ефект магніту для карток */
+        scrollbar-width: none;       /* Ховаємо дефолтну смугу скролу */
+        margin: 20px auto 0 auto;    /* Опустили картинку на 20px вниз від тексту */
+        padding: 0;
+    }
+
+    .sales-grid::-webkit-scrollbar {
+        display: none;               /* Ховаємо скроллбар для Chrome/Safari */
+    }
+
+    /* КАРТКА ТОВАРУ У СЛАЙДЕРІ */
+    .sales-card {
+        flex: 0 0 100%;              /* Кожна картка займає 100% вікна слайдера */
+        width: 100%;
+        scroll-snap-align: center;   /* Фіксуємо чітко по центру вікна */
+        text-align: left;            /* Назва та ціна зміщуються ліворуч під фото */
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    /* ЗМЕНШЕНА КАРТИНКА БЕСТСЕЛЕРА */
+    .sales-card img {
+        width: 100%;
+        height: 220px;               /* Акуратна пропорційна висота */
+        object-fit: cover;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .sales-card .title {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 2px;
+        font-family: sans-serif;
+    }
+    
+    .sales-card .price {
+        font-size: 15px;
+        font-weight: bold;
+        color: #000000;
+        font-family: sans-serif;
+    }
+
+    /* ЧОРНІ КРУГЛІ СТРІЛОЧКИ (ІДЕНТИЧНІ ДРУГІЙ СТОРІНЦІ) */
+    .sales-arrow {
+        position: absolute;
+        top: 110px;                  /* Ідеально по центру нашої орієнтованої картинки */
+        width: 36px;                 
+        height: 36px;
+        background-color: #111111;   
+        color: #ffffff;              
+        border-radius: 50%;          
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        padding: 0;
+    }
+
+    .sales-arrow:active {
+        background-color: #444444;   
+    }
+
+    /* Ліва стрілочка */
+    .sales-arrow.left-arrow {
+        left: 15px;
+    }
+
+    /* Права стрілочка */
+    .sales-arrow.right-arrow {
+        right: 15px;
+    }
+}
