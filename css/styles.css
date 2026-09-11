@@ -25,6 +25,7 @@ a {
 .header {
     background: linear-gradient(to bottom, #234c6b, #316387, #39709a);
     width: 100%;
+    z-index: 10;
 }
 .header.fixed{
     position: fixed;
