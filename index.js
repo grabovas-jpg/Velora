@@ -1,6 +1,5 @@
-// ==========================================
-// 1. КОД ДЛЯ ТВОГО СЛАЙДЕРА (д)
-// ==========================================
+
+// 1. код для слайдера// 
 const cards = document.querySelectorAll('.card');
 let index = 0;
 
@@ -38,9 +37,8 @@ document.querySelector('.prev').addEventListener('click', () => {
 updateSlider();
 
 
-// ==========================================
-// 2. ДОДАТКОВИЙ КОД ДЛЯ БУРГЕР-МЕНЮ (Новий)
-// ==========================================
+
+// 2. код для меню//
 document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.querySelector('.nav_pop-up_menu');
     const navMenu = document.querySelector('.nav');
@@ -52,3 +50,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+

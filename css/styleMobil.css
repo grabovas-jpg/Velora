@@ -57,10 +57,10 @@
         text-align: right;
     }
 
-    /* ВЕЛИКИЙ ТЕКСТ "VELORA" — ТЕПЕР ЧІТКО ЗВЕРХУ І НЕ ПЕРЕКРИВАЄ ЛЮДЕЙ */
+    /* ВЕЛИКИЙ ТЕКСТ "VELORA" */
     .big-title {
-        font-size: 64px;             /* Оптимальний розмір для екрана 360px */
-        position: relative;          /* Прибираємо absolute, щоб текст не наповзав на фото */
+        font-size: 64px;             
+        position: relative;          
         top: 0;
         left: 0;
         transform: none;
@@ -78,7 +78,7 @@
         font-size: 14px;
         text-align: center;
         width: 85%;
-        margin: 0 auto 20px auto;    /* Прибираємо гігантські марджини */
+        margin: 0 auto 20px auto;    
         color: #ffffff;
         display: block;
         line-height: 1.4;
@@ -91,37 +91,33 @@
         position: relative;
         width: 80%;        
         display: flex;
-        flex-direction: column;      /* Кнопка ляже під фотографією або на неї */
+        flex-direction: column;      
         align-items: center;
         justify-content: center;
         z-index: 5;         
-        margin-top: auto;            /* Штовхає фото до нижнього краю екрана */
-    }
+        margin-top: auto;            
 
     /* КАРТИНКА МОДЕЛЕЙ */
     .hero-img {     
         width: 170%;
         height: auto;
-        max-height: 60vh;            /* Обмежуємо висоту фото, щоб залишити місце для кнопки */
-        object-fit: cover;
-        display: block;
-        margin-bottom: 0;   
+        max-height: 60vh;
         padding-top: 180px;
         padding-right: 20px;
     }
 
-    /* КНОПКА "ОФОРМИТИ ЗАМОВЛЕННЯ" — ПО СЕРЕДИНІ ТА КРАСИВА */
+
     .btn-buy {
-        bottom: 20px;                /* Піднімаємо трохи вище від краю */
+        bottom: 20px;                
         left: 50%;
-        transform: translateX(-50%); /* Ідеальне центрування по горизонталі */
+        transform: translateX(-50%);
         height: auto;                                 
         max-width: 160px;       
         font-size: 11px;          
         font-weight: bold;
         text-align: center;
-        background-color: #ffffff;   /* Біле тло */
-        color: #000000;              /* Чорний текст */
+        background-color: #ffffff;   
+        color: #000000;              
         display: flex;
         justify-content: center;
         align-items: center;
@@ -239,8 +235,6 @@
         justify-content: center;
         align-items: center;
         gap: 25px;
-        
-        /* Анімація закриття/відкриття */
         max-height: 0px; 
         overflow: hidden;
         padding: 0;
@@ -262,9 +256,7 @@
         white-space: nowrap;
     }
 @media (max-width: 360px) {
-    /* ==========================================================================
-       ДРУГА СТОРІНКА — ПОВНА ВЕРСТКА СЛАЙДЕРА "НОВІ НАДХОДЖЕННЯ" (360px)
-       ========================================================================== */
+    /*2 сторінка */
 
     .main-container {
         padding: 40px 0;
@@ -317,15 +309,12 @@
         font-weight: normal;
         font-size: 10px;
     }
-
-    /* КОНТЕЙНЕР ДЛЯ ЦЕНТРУВАННЯ ТА СТРІЛОК */
     .products-slider-container {
-        position: relative;          /* Робить цей блок головним орієнтиром для стрілок */
-        width: 100%;
+        position: relative;         
         display: flex;
         align-items: center;
-        justify-content: center;     /* Зсуває трек з фотографією чітко по центру */
-        padding: 0 50px;             /* Створює зазори з боків під круглі стрілочки */
+        justify-content: center;     
+        padding: 0 50px;             
         box-sizing: border-box;
     }
 
@@ -333,25 +322,25 @@
     .products-grid {
         display: flex;
         width: 100%;
-        max-width: 235px;            /* Обмежує ширину картки під пропорції екрана 360px */
+        max-width: 235px;            
         gap: 0;                      
-        overflow-x: auto;            /* Дозволяє свайпати картки пальцем */
+        overflow-x: auto;            
         scroll-snap-type: x mandatory; 
-        scrollbar-width: none;       /* Прибирає бігунок прокрутки */
+        scrollbar-width: none;       
         margin: 0 auto;
         padding: 0;
     }
 
     .products-grid::-webkit-scrollbar {
-        display: none;               /* Ховаємо скроллбар для мобільних браузерів Safari/Chrome */
+        display: none;               
     }
 
     /* КАРТКА ТОВАРУ */
     .product-card {
-        flex: 0 0 100%;              /* Один товар займає 100% простору вікна */
+        flex: 0 0 100%;              
         width: 100%;
-        scroll-snap-align: center;   /* Фіксує товар рівно по центру під час свайпу */
-        text-align: left;            /* Текстові блоки зміщуються ліворуч під фото */
+        scroll-snap-align: center;   
+        text-align: left;            
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -359,7 +348,7 @@
 
     .product-card img {
         width: 100%;
-        height: 275px;               /* Висота фотографії з макета */
+        height: 275px;               
         object-fit: cover;
         margin-bottom: 12px;
         display: block;
@@ -379,11 +368,11 @@
         font-family: sans-serif;
     }
 
-    /* ЧОРНІ КРУГЛІ СТРІЛОЧКИ (СПІЛЬНІ СТИЛІ) */
+
     .product-arrow {
         position: absolute;
-        top: 118px;                  /* Встановлює стрілки чітко по центру висоти зображення */
-        width: 40px;                 /* Кругла ергономічна форма під палець */
+        top: 118px;                 
+        width: 40px;                 
         height: 40px;
         background-color: #111111;   
         color: #ffffff;              
@@ -413,9 +402,7 @@
     }
 }
 @media (max-width: 360px) {
-    /* ==========================================================================
-       ЧЕТВЕРТА СТОРІНКА — СЛАЙДЕР "ЛІДЕРИ ПРОДАЖІВ" (360px)
-       ========================================================================== */
+    /* 4 сторінка */
 
     .sales-container {
         padding: 35px 0 40px 0;
@@ -445,12 +432,12 @@
 
     /* КОНТЕЙНЕР ДЛЯ ЦЕНТРУВАННЯ ТА СТРІЛОК */
     .sales-slider-container {
-        position: relative;          /* Прив'язуємо стрілки до фото */
+        position: relative;          
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;     /* Центруємо картку по горизонталі */
-        padding: 0 45px;             /* Вільне місце для бокових стрілок */
+        justify-content: center;     
+        padding: 0 45px;             
         box-sizing: border-box;
     }
 
@@ -458,25 +445,25 @@
     .sales-grid {
         display: flex;
         width: 100%;
-        max-width: 190px;            /* Точно такий же компактний розмір фото */
+        max-width: 190px;            
         gap: 0;                      
-        overflow-x: auto;            /* Дозволяємо свайпати пальцем */
-        scroll-snap-type: x mandatory; /* Ефект магніту для карток */
-        scrollbar-width: none;       /* Ховаємо дефолтну смугу скролу */
-        margin: 20px auto 0 auto;    /* Опустили картинку на 20px вниз від тексту */
+        overflow-x: auto;           
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;       
+        margin: 20px auto 0 auto;    
         padding: 0;
     }
 
     .sales-grid::-webkit-scrollbar {
-        display: none;               /* Ховаємо скроллбар для Chrome/Safari */
+        display: none;              
     }
 
     /* КАРТКА ТОВАРУ У СЛАЙДЕРІ */
     .sales-card {
-        flex: 0 0 100%;              /* Кожна картка займає 100% вікна слайдера */
+        flex: 0 0 100%;              
         width: 100%;
-        scroll-snap-align: center;   /* Фіксуємо чітко по центру вікна */
-        text-align: left;            /* Назва та ціна зміщуються ліворуч під фото */
+        scroll-snap-align: center;   
+        text-align: left;           
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -485,7 +472,7 @@
     /* ЗМЕНШЕНА КАРТИНКА БЕСТСЕЛЕРА */
     .sales-card img {
         width: 100%;
-        height: 220px;               /* Акуратна пропорційна висота */
+        height: 220px;               
         object-fit: cover;
         margin-bottom: 10px;
         display: block;
@@ -536,4 +523,5 @@
     .sales-arrow.right-arrow {
         right: 15px;
     }
+}
 }

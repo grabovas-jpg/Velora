@@ -646,34 +646,30 @@ button {
     margin-top: auto;
 }
 
-/*  АДАПТАЦІЯ ДЛЯ 1200px (Десктоп  */
+
 @media (min-width: 1200px) {
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    position: relative;
+    z-index: 10;
+}
 
-    .header-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1220px; 
-        margin: 0 auto;    
-        padding: 0 20px;   
-        width: 100%;
-        box-sizing: border-box;
-    }
-   
-    .nav_pop-up_menu, .search_bar, .search_icon { 
-        display: none;
-    }
+.logo a {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+    letter-spacing: 2px;
+    color: white;
+}
+.menu-toggle {
+    display: none;
+}
 
-    .nav {
-        display: flex;
-        /* max-height: none; */
-        position: static;
-        flex-direction: row;
-        background: transparent;
-        /* box-shadow: none; */
-        width: auto;
-        gap: 30px;
-    }
+
+
 
     /* 2 СТОРІНКА */
 .buttons {
@@ -690,8 +686,8 @@ button {
     color: #000000;
     font-size: 13px;
     cursor: pointer;
-    border-radius: 4px;          /* майже квадратні кути */
-    white-space: nowrap;         /* текст не обрізається */
+    border-radius: 4px;          
+    white-space: nowrap;         
     width: 170px;
     margin: 5px;
 }
@@ -910,9 +906,7 @@ button {
     font-size: 18px !important;
     cursor: pointer !important;
 }
-    /* ==========================================================================
-       ЛІДЕРИ ПРОДАЖІВ (4 СТОРІНКА) — КОМПАКТНІ КАРТИНКИ 220х270
-       ========================================================================== */
+    /* 4 сторінка */
     .leaders-section .leaders-container {
         display: grid;
         /* Робимо 4 колонки по 220px, щоб вони гарно заповнили простір десктопу */
@@ -929,7 +923,6 @@ button {
         text-align: left;
     }
 
-    /* Точна фіксація 220 на 270 для лідерів продажів */
     .leaders-section .product-card img {
         width: 220px;
         height: 270px; 
@@ -953,17 +946,11 @@ button {
         display: block;
     }
 }
-
-/* @media (min-width: 781px) {
-button.menu-toggle {
-        visibility: hidden;
-}
-} */
 @media (min-width: 481px) {
     .products-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Рівно 2 колонки */
-        gap: 40px 30px; /* Відступи між картками */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px 30px;
     }
 
     .product-card {
