@@ -56,9 +56,9 @@ $(function() {
     let topH=top.height();
     let header=$("#header");
     let scrollPos=$(window).scrollTop();
-    console.log(topH);
+
 $(window).on("scroll load", function() {
-    scrollPos=$(this).scrollPos();
+    scrollPos=$(this).scrollTop();
     if (scrollPos>topH) {
         header.addClass("fixed");
     }
