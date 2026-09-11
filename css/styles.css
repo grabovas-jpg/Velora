@@ -26,6 +26,12 @@ a {
     background: linear-gradient(to bottom, #234c6b, #316387, #39709a);
     width: 100%;
 }
+.header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .header-top {
     display: flex;
     align-items: center;

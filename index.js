@@ -51,3 +51,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+$(function() {
+    let top=$("#top");
+    let topH=top.height();
+    let header=$("#header");
+    let scrollPos=$(winow).scrollTop();
+    console.log(topH);
+$(window).on("scroll load", function() {
+    scrollPos=$(this).scrollPos();
+    if (scrollPos>topH) {
+        header.addClass("fixed");
+    }
+    else {
+        header.removeclass("fixed");
+    }
+    console.log(scrollPos);
+})
+})
