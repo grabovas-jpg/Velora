@@ -55,7 +55,7 @@ $(function() {
     let top=$("#top");
     let topH=top.height();
     let header=$("#header");
-    let scrollPos=$(winow).scrollTop();
+    let scrollPos=$(window).scrollTop();
     console.log(topH);
 $(window).on("scroll load", function() {
     scrollPos=$(this).scrollPos();
@@ -66,5 +66,5 @@ $(window).on("scroll load", function() {
         header.removeclass("fixed");
     }
     console.log(scrollPos);
-})
-})
+});
+});
